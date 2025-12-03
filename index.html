@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Viables Global · JAB Aladeselu – A Message on Justice in Nigeria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Viables Global presents a social justice message for Nigeria by author JAB Aladeselu — a public letter about dignity, courage, and rebuilding our nation together." />
+
+  <!-- Optional Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-alt: #020617;
+      --card-bg: #111827;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.1);
+      --text: #e5e7eb;
+      --text-muted: #9ca3af;
+      --text-strong: #f9fafb;
+      --border-subtle: #1f2933;
+      --danger: #f97373;
+      --focus: #fbbf24;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.85);
+      --shadow-small: 0 10px 25px rgba(15, 23, 42, 0.7);
+      --spacing-page: min(5vw, 3rem);
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 48%, #020617 100%);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1320px;
+      padding: var(--spacing-page);
+      padding-bottom: 4rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: radial-gradient(circle at 20% 0, #38bdf8, #0f172a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--text-strong);
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.9), 0 25px 45px rgba(15, 23, 42, 0.9);
+    }
+
+    .logo-text-main {
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      color: var(--text-strong);
+    }
+
+    .logo-text-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    nav a {
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      border-color: rgba(148, 163, 184, 0.6);
+      color: var(--text-strong);
+      background: rgba(148, 163, 184, 0.06);
+      outline: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .hero-copy {
+      padding: 1.25rem 1.25rem 1.5rem;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.92));
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.13), transparent 65%),
+        radial-gradient(circle at 80% 0, rgba(129, 140, 248, 0.16), transparent 60%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .hero-badge span {
+      display: inline-block;
+    }
+
+    .hero-badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.35);
+    }
+
+    .hero-title {
+      position: relative;
+      font-size: clamp(1.9rem, 3vw + 1rem, 2.6rem);
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+      color: var(--text-strong);
+    }
+
+    .hero-highlight {
+      background: linear-gradient(120deg, #38bdf8, #a5b4fc, #f97316);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      position: relative;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+      max-width: 40rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-actions {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.05rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
+      outline: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #0b1120;
+      box-shadow: 0 14px 35px rgba(8, 47, 73, 0.8);
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(8, 47, 73, 0.95);
+      border-color: rgba(15, 23, 42, 0.9);
+    }
+
+    .btn-ghost {
+      background: rgba(15, 23, 42, 0.85);
+      border-color: rgba(148, 163, 184, 0.6);
+      color: var(--text-muted);
+    }
+
+    .btn-ghost:hover,
+    .btn-ghost:focus-visible {
+      background: rgba(15, 23, 42, 1);
+      color: var(--text-strong);
+      border-color: var(--accent);
+    }
+
+    .btn-icon {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .hero-meta {
+      position: relative;
+      margin-top: 0.9rem;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      align-items: center;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(150deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.9));
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.15), transparent 60%),
+        radial-gradient(circle at 90% 90%, rgba(236, 72, 153, 0.16), transparent 60%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .hero-card-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .author-photo {
+      width: 64px;
+      height: 64px;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 2px solid rgba(148, 163, 184, 0.8);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+      background: #020617;
+    }
+
+    .author-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-card-title {
+      font-size: 0.95rem;
+      color: var(--text-strong);
+      font-weight: 600;
+    }
+
+    .hero-card-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-quote {
+      position: relative;
+      font-size: 0.87rem;
+      line-height: 1.6;
+      color: var(--text);
+      margin-bottom: 0.9rem;
+      padding-left: 1.4rem;
+    }
+
+    .hero-quote::before {
+      content: "“";
+      position: absolute;
+      left: 0;
+      top: -0.4rem;
+      font-size: 2rem;
+      color: rgba(148, 163, 184, 0.5);
+    }
+
+    .hero-card-footer {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      font-size: 0.75rem;
+    }
+
+    .pill {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-muted);
+    }
+
+    .pill-accent {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: #38bdf8;
+      color: #e0f2fe;
+    }
+
+    .hero-tagline-card {
+      margin-top: 0.7rem;
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(148, 163, 184, 0.7);
+      padding: 0.75rem 0.9rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      margin: 0 0 0.4rem;
+      color: var(--text-strong);
+    }
+
+    .section-intro {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 34rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .section-shell {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.92));
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      box-shadow: var(--shadow-small);
+      padding: 1.4rem 1.4rem 1.6rem;
+    }
+
+    .message-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .message-body {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text);
+    }
+
+    .message-body p {
+      margin: 0 0 0.85rem;
+    }
+
+    .message-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .message-callout {
+      margin-top: 1rem;
+      padding: 0.85rem 0.9rem;
+      border-radius: var(--radius-lg);
+      background: var(--accent-soft);
+      border: 1px solid rgba(56, 189, 248, 0.6);
+      font-size: 0.86rem;
+    }
+
+    .graphics-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .graphic-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.96));
+      padding: 0.75rem 0.85rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 0.6rem;
+      align-items: center;
+      font-size: 0.78rem;
+    }
+
+    .graphic-card figure {
+      margin: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(51, 65, 85, 0.9);
+    }
+
+    .graphic-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .graphic-caption-title {
+      font-weight: 600;
+      color: var(--text-strong);
+      margin-bottom: 0.15rem;
+      font-size: 0.83rem;
+    }
+
+    .graphic-caption-text {
+      color: var(--text-muted);
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .tile {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      background: radial-gradient(circle at top, #020617, #020617 40%, #020617 100%);
+      padding: 0.8rem 0.85rem 0.9rem;
+      font-size: 0.78rem;
+      position: relative;
+      overflow: hidden;
+      min-height: 140px;
+    }
+
+    .tile-label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .tile-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-strong);
+      margin-bottom: 0.35rem;
+    }
+
+    .tile-body {
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .quote-stripe {
+      border-radius: var(--radius-xl);
+      padding: 1.1rem 1.1rem 1.2rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.92));
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+    }
+
+    .quote-main {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .quote-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .quote-tag {
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .contact-note {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    form {
+      display: grid;
+      gap: 0.75rem;
+      font-size: 0.84rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.2rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem 0.6rem;
+      border-radius: 0.6rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(15, 23, 42, 0.95);
+      color: var(--text);
+      font: inherit;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(148, 163, 184, 0.75);
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    input:focus-visible,
+    textarea:focus-visible,
+    .btn:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+      box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.9);
+    }
+
+    .form-row-inline {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .form-footnote {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(30, 41, 59, 0.9);
+      padding-top: 0.9rem;
+    }
+
+    footer a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .message-grid,
+      .tiles,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .tiles {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.4rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding-inline: 1.3rem;
+      }
+
+      .hero-copy,
+      .hero-card,
+      .section-shell {
+        padding: 1.05rem 1.05rem 1.2rem;
+      }
+
+      .graphic-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <div class="logo-mark" aria-hidden="true">V</div>
+        <div>
+          <div class="logo-text-main">Viables Global</div>
+          <div class="logo-text-sub">Social justice essays by JAB Aladeselu</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#message">Message</a>
+        <a href="#visual">Visual story</a>
+        <a href="#about">About the author</a>
+        <a href="#connect">Connect</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            <span>New essay · Nigeria &amp; the world</span>
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            A message about <span class="hero-highlight">justice, courage, and rebuilding Nigeria together</span>.
+          </h1>
+          <p class="hero-subtitle">
+            Under Viables Global, JAB Aladeselu opens a public letter to Nigerians at home and in the diaspora—
+            a call to see each other clearly, name what is broken, and insist on a country where every life
+            has weight and worth.
+          </p>
+          <div class="hero-actions">
+            <a href="#message" class="btn btn-primary">
+              <span class="btn-icon" aria-hidden="true">📖</span>
+              <span>Read the message</span>
+            </a>
+            <a href="#visual" class="btn btn-ghost">
+              <span class="btn-icon" aria-hidden="true">✨</span>
+              <span>Explore the visuals</span>
+            </a>
+          </div>
+          <div class="hero-meta" aria-label="Reading time and accessibility info">
+            <span>⏱️ Under 5 minutes</span>
+            <span>✅ Free &amp; open to the public</span>
+          </div>
+        </div>
+
+        <!-- Hero visual card -->
+        <aside class="hero-visual" aria-label="Author and message summary">
+          <article class="hero-card">
+            <div class="hero-card-header">
+              <div class="author-photo">
+                <!-- Replace the src with your real author headshot -->
+                <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+                     alt="Portrait of Nigerian author JAB Aladeselu">
+              </div>
+              <div>
+                <h2 class="hero-card-title">JAB Aladeselu</h2>
+                <div class="hero-card-subtitle">Writer · Nigerian voice · Viables Global</div>
+              </div>
+            </div>
+            <p class="hero-quote">
+              “I wrote this for anyone who looks at Nigeria with love and frustration at the same time—
+              who still believes this country can be fairer than what we see on the news and on our streets.”
+            </p>
+            <div class="hero-card-footer">
+              <span class="pill pill-accent">Social justice letter · Free to read</span>
+              <span class="pill">Nigeria · Africa · Global audience</span>
+            </div>
+            <div class="hero-tagline-card">
+              <strong>Viables Global note:</strong> This space is intentionally simple—high contrast, larger text,
+              and plain language—so that the message of justice in Nigeria is accessible to as many people as possible.
+            </div>
+          </article>
+        </aside>
+      </section>
+
+      <!-- Main message -->
+      <section id="message" aria-labelledby="message-heading">
+        <div class="section-label">The message</div>
+        <h2 id="message-heading" class="section-title">A letter on social justice in Nigeria</h2>
+        <p class="section-intro">
+          This is a public letter, offered as a mirror and a conversation starter. You can keep it as-is,
+          translate it, or adapt it—with credit—into your own community work.
+        </p>
+
+        <div class="section-shell message-grid">
+          <article class="message-body">
+            <p>
+              Dear Nigeria,
+            </p>
+            <p>
+              There is a version of you that lives in our memories—of laughter in crowded compounds,
+              of neighbours who knew our names, of streets that felt rough but familiar. And there is the version
+              we wake up to now: headlines of corruption, police brutality, poverty, unpaid salaries, and a system
+              that often rewards the loudest and punishes the honest.
+            </p>
+            <p>
+              Somewhere between those two Nigerias are millions of ordinary people doing their best:
+              parents stretching food and school fees, young people learning skills in difficult economies,
+              voters standing under the sun, and citizens who still whisper, “It can be better” even
+              when everything says otherwise.
+            </p>
+            <p>
+              My message is simple but not soft:
+              <strong>every Nigerian life must matter more than power, tribe, religion, or politics.</strong>
+              Until a poor person can walk the same road as a senator without fear, we have work to do.
+              Until our young people no longer have to choose between japa and survival, we have work to do.
+            </p>
+            <p>
+              Social justice is not a slogan; it is small, consistent courage. It is the okada rider refusing
+              to pay a bribe, the civil servant quietly doing honest work, the protester demanding better
+              without losing their humanity, the artist telling truth in music, in film, in books.
+            </p>
+            <p>
+              I don’t have all the answers. But I believe this: if we keep insisting that the system must
+              work for the weakest Nigerian, not just the strongest, something will shift. Justice is slow,
+              but it listens when people refuse to be silent.
+            </p>
+            <p>
+              If these words find you tired, let them also find you seen. You are not alone in your anger,
+              in your disappointment, or in your hope. Nigeria is not a problem to be escaped; it is a home
+              to be rebuilt, one fair choice at a time.
+            </p>
+            <p>
+              With stubborn hope,<br />
+              <strong>JAB Aladeselu</strong><br />
+              For Viables Global
+            </p>
+
+            <div class="message-callout" role="note">
+              ✊ <strong>How to use this message:</strong> Read it in your home, your campus group, your faith community,
+              or your WhatsApp circle. Share it freely (with credit) wherever Nigerians are thinking, arguing,
+              and dreaming about a more just country.
+            </div>
+          </article>
+
+          <!-- Graphic content to support the message -->
+          <aside class="graphics-column" aria-label="Graphic summaries of the message">
+            <div class="graphic-card">
+              <div>
+                <div class="graphic-caption-title">Three pillars of this message</div>
+                <div class="graphic-caption-text">
+                  • <strong>Dignity:</strong> Every Nigerian life has weight.<br />
+                  • <strong>Truth:</strong> We must name what is broken.<br />
+                  • <strong>Solidarity:</strong> We refuse to suffer in silence.
+                </div>
+              </div>
+              <figure>
+                <!-- Replace with your own illustration (e.g., Nigerian skyline, city crowd) -->
+                <img src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg"
+                     alt="City street filled with people, symbolising the many voices of Nigeria.">
+              </figure>
+            </div>
+
+            <div class="graphic-card">
+              <div>
+                <div class="graphic-caption-title">Where to start from where you are</div>
+                <div class="graphic-caption-text">
+                  Begin with one honest act: refuse a bribe, speak up for someone weaker,
+                  join a civic group, or simply share this letter with someone who has lost hope.
+                </div>
+              </div>
+              <figure>
+                <!-- Replace with your own graphic (e.g., raised hands, community circle) -->
+                <img src="https://images.pexels.com/photos/4668358/pexels-photo-4668358.jpeg"
+                     alt="Hands raised together in unity, symbolising collective action and justice.">
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Visual story / graphics -->
+      <section id="visual" aria-labelledby="visual-heading">
+        <div class="section-label">Visual story</div>
+        <h2 id="visual-heading" class="section-title">Seeing justice in three frames</h2>
+        <p class="section-intro">
+          For people who may not read the full letter, these three visual ideas capture the heart of the message:
+          from daily struggle to thoughtful pause to collective action.
+        </p>
+
+        <div class="section-shell">
+          <div class="tiles" role="list">
+            <article class="tile" role="listitem">
+              <div class="tile-label">Frame 1</div>
+              <h3 class="tile-title">The everyday struggle</h3>
+              <p class="tile-body">
+                A crowded Lagos bus stop, a market in Ibadan, a village road in the North.
+                Nigerians carrying the weight of bad systems on strong shoulders. This frame says:
+                <em>we see the injustice you live with daily.</em>
+              </p>
+            </article>
+
+            <article class="tile" role="listitem">
+              <div class="tile-label">Frame 2</div>
+              <h3 class="tile-title">The pause for truth</h3>
+              <p class="tile-body">
+                A quiet room, a conversation, a moment where we stop performing and start telling the truth:
+                about corruption, about fear, about the cost of silence. Justice begins when we stop pretending.
+              </p>
+            </article>
+
+            <article class="tile" role="listitem">
+              <div class="tile-label">Frame 3</div>
+              <h3 class="tile-title">The choice to act</h3>
+              <p class="tile-body">
+                Youths organising, communities voting, neighbours protecting each other, professionals refusing
+                to abuse their office. Change in Nigeria will not be magic; it will be these small, courageous choices,
+                repeated.
+              </p>
+            </article>
+          </div>
+
+          <div class="quote-stripe">
+            <div class="quote-main">
+              “A just Nigeria will not fall from the sky; it will be built by ordinary people who quietly decide,
+              again and again, that no one is too small to deserve fairness.”
+            </div>
+            <div class="quote-meta">
+              <span class="quote-tag">Viables Global · Shareable quote (with credit)</span>
+              <span>Tag reflections with <strong>#ViablesGlobal</strong> or <strong>#JusticeForNigeria</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About the author -->
+      <section id="about" aria-labelledby="about-heading">
+        <div class="section-label">About</div>
+        <h2 id="about-heading" class="section-title">About JAB Aladeselu</h2>
+        <p class="section-intro">
+          This page sits under the Viables Global banner—a home for writing that refuses to give up on people.
+        </p>
+
+        <div class="section-shell">
+          <p style="font-size:0.92rem; line-height:1.7; color:var(--text); max-width:44rem;">
+            <strong>JAB Aladeselu</strong> is a Nigerian writer and thinker who uses story, letters, and public reflection
+            to explore social justice, faith, power, and what it means to stay human inside broken systems.
+            Through Viables Global, JAB writes for Nigerians on the ground and in the diaspora—people who carry
+            both love for the country and a deep ache for something better.
+          </p>
+          <p style="font-size:0.9rem; line-height:1.7; color:var(--text-muted); max-width:42rem;">
+            JAB believes that real change is both structural and personal: laws and policies must shift,
+            but so must our daily choices, our conversations at home, and the way we see those whose lives
+            are different from ours. The work is slow, but the stories continue.
+          </p>
+        </div>
+      </section>
+
+      <!-- Connect / contact -->
+      <section id="connect" aria-labelledby="connect-heading">
+        <div class="section-label">Connect</div>
+        <h2 id="connect-heading" class="section-title">Respond, collaborate, or invite</h2>
+        <p class="section-intro">
+          This message is the beginning of a conversation, not the end of it. Here’s how to reach out or bring
+          this work into your own community.
+        </p>
+
+        <div class="section-shell contact-grid">
+          <div>
+            <p class="contact-note">
+              Use the form to share a reflection, a story from your part of Nigeria, or ideas for collaboration—
+              from campus dialogues to community forums, online conversations, or organisational events.
+            </p>
+            <p class="contact-note">
+              Prefer email? Reach out at
+              <!-- Replace with your real preferred email address -->
+              <a href="mailto:contact@viablesglobal.com">contact@viablesglobal.com</a>
+              and include “Justice in Nigeria” in the subject line.
+            </p>
+          </div>
+
+          <form aria-label="Contact JAB Aladeselu">
+            <div class="form-row-inline">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name (optional)" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+                <div class="form-footnote">
+                  Your email is only used so we can reply. No spam, no sharing of your details.
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="message-text">Your message</label>
+              <textarea id="message-text" name="message" placeholder="Share your experience, your questions, or how this letter met you."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="btn-icon" aria-hidden="true">📨</span>
+              <span>Send to Viables Global</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>© <span id="year"></span> Viables Global · JAB Aladeselu. All rights reserved.</div>
+      <div>
+        Built to be readable, accessible, and open to the public.
+        <a href="#hero-title">Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Keep the footer year current
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
